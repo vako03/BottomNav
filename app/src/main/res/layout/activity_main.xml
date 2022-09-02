@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_mask_group" />
+
+        <TextView
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:text="Good dat, Zesan"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="40dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_ellipse_2"/>
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_group_47"
+            android:layout_marginTop="35sp"
+            android:layout_marginLeft="345dp"/>
+
+        <ImageView
+            android:layout_width="364dp"
+            android:layout_height="167dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/ic_rectangle_6"/>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="$6,190.00"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:layout_marginTop="115dp"
+            android:layout_marginLeft="90dp"/>
+
+        <ImageView
+            android:layout_width="364dp"
+            android:layout_height="396dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/ic_group_45"/>
+
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>
